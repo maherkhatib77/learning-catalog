@@ -1,0 +1,10 @@
+{
+  "hours": [
+    {"id": "h20", "hours": 20, "description": "קורס קצר", "recognizedForReward": true, "status": "פעיל"},
+    {"id": "h25", "hours": 25, "description": "קורס קצר מורחב", "recognizedForReward": true, "status": "פעיל"},
+    {"id": "h30", "hours": 30, "description": "קורס בינוני", "recognizedForReward": true, "status": "פעיל"},
+    {"id": "h40", "hours": 40, "description": "קורס מקיף", "recognizedForReward": true, "status": "פעיל"},
+    {"id": "h60", "hours": 60, "description": "קורס מתקדם", "recognizedForReward": true, "status": "פעיל"},
+    {"id": "h120", "hours": 120, "description": "קורס מקצועי", "recognizedForReward": true, "status": "פעיל"}
+  ]
+}
