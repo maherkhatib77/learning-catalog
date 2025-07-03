@@ -1,0 +1,17 @@
+{
+  "instructors": [
+    {
+      "id": "INST001",
+      "firstName": "רחל",
+      "lastName": "כהן",
+      "idNumber": "123456789",
+      "email": "rachel.cohen@example.com",
+      "phone": "052-1234567",
+      "username": "instructor1",
+      "password": "pass123",
+      "role": "מדריך",
+      "status": "פעיל",
+      "createdDate": "2025-01-01T00:00:00Z"
+    }
+  ]
+}
