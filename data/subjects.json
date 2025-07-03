@@ -1,0 +1,10 @@
+{
+  "subjects": [
+    {"id": "hebrew", "name": "שפה עברית", "category": "שפות", "status": "פעיל"},
+    {"id": "arabic", "name": "שפה ערבית", "category": "שפות", "status": "פעיל"},
+    {"id": "math", "name": "מתמטיקה", "category": "מדעים מדויקים", "status": "פעיל"},
+    {"id": "science", "name": "מדעים", "category": "מדעים מדויקים", "status": "פעיל"},
+    {"id": "english", "name": "אנגלית", "category": "שפות", "status": "פעיל"},
+    {"id": "history", "name": "היסטוריה", "category": "מדעי הרוח", "status": "פעיל"}
+  ]
+}
