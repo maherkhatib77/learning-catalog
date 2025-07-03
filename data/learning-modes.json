@@ -1,0 +1,8 @@
+{
+  "modes": [
+    {"id": "face-to-face", "name": "פנים אל פנים", "description": "מפגש פיזי", "status": "פעיל"},
+    {"id": "synchronous", "name": "סינכרוני", "description": "אונליין בזמן אמת", "status": "פעיל"},
+    {"id": "asynchronous", "name": "א-סינכרוני", "description": "אונליין לא בזמן אמת", "status": "פעיל"},
+    {"id": "hybrid", "name": "היברידי", "description": "שילוב של מספר אופנים", "status": "פעיל"}
+  ]
+}
