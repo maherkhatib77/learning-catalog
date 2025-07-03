@@ -1,0 +1,15 @@
+{
+  "lecturers": [
+    {
+      "id": "LEC001",
+      "fullName": "פרופ' משה לוי",
+      "idNumber": "987654321",
+      "phone": "052-9876543",
+      "email": "moshe.levy@example.com",
+      "specialization": "מתמטיקה",
+      "address": "תל אביב",
+      "status": "פעיל",
+      "notes": ""
+    }
+  ]
+}
