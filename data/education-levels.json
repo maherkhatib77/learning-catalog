@@ -1,0 +1,10 @@
+{
+  "levels": [
+    {"id": "pre-elem", "name": "קדם-יסודי", "description": "גילאי 3-6", "status": "פעיל"},
+    {"id": "elem", "name": "יסודי", "description": "גילאי 6-12", "status": "פעיל"},
+    {"id": "middle", "name": "על-יסודי", "description": "גילאי 12-15", "status": "פעיל"},
+    {"id": "high", "name": "תיכון", "description": "גילאי 15-18", "status": "פעיל"},
+    {"id": "special", "name": "חינוך מיוחד", "description": "צרכים מיוחדים", "status": "פעיל"},
+    {"id": "general", "name": "כללי", "description": "כל הגילאים", "status": "פעיל"}
+  ]
+}
