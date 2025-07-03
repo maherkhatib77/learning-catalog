@@ -1,0 +1,24 @@
+{
+  "solutions": [
+    {
+      "id": "SOL001",
+      "name": "חשיבה מתמטית יצירתית",
+      "instructor": "ד\"ר רחל כהן",
+      "lecturer": "פרופ' משה לוי",
+      "educationLevel": "יסודי",
+      "subject": "מתמטיקה",
+      "academicHours": 40,
+      "learningMode": "פנים אל פנים",
+      "meetingDay": "רביעי",
+      "startTime": "16:00",
+      "endTime": "18:00",
+      "startDate": "2025-02-15",
+      "goals": "פיתוח חשיבה יצירתית במתמטיקה, הכרת אסטרטגיות פתרון בעיות מתקדמות",
+      "contactMade": "כן",
+      "syllabusStatus": "סילבוס מוכן",
+      "status": "פעיל",
+      "createdDate": "2025-01-15T10:00:00Z",
+      "createdBy": "Pisga"
+    }
+  ]
+}
