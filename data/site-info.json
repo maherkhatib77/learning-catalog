@@ -1,14 +1,68 @@
 {
   "siteInfo": {
+    "id": 1,
     "title": "קטלוג פתרונות למידה",
-    "academicYear": "תשפ\"ה",
-    "copyright": "© 2025 קטלוג פתרונות למידה",
+    "academicYear": "תשפ\"ה - 2024/2025",
+    "copyright": "© 2025 קטלוג פתרונות למידה | כל הזכויות שמורות",
     "phone": "03-1234567",
     "email": "info@learning-catalog.co.il",
     "address": "רחוב החינוך 15, תל אביב",
-    "workingHours": "א'-ה' 08:00-17:00, ו' 08:00-13:00",
-    "wazeLink": "https://waze.com/...",
-    "googleMapsLink": "https://maps.google.com/...",
-    "lastUpdate": "2025-01-15T10:00:00Z"
+    "workingHours": {
+      "sunday": "08:00-17:00",
+      "monday": "08:00-17:00", 
+      "tuesday": "08:00-17:00",
+      "wednesday": "08:00-17:00",
+      "thursday": "08:00-17:00",
+      "friday": "08:00-13:00",
+      "saturday": "סגור"
+    },
+    "wazeLink": "https://waze.com/ul/h9bj6hfgpv",
+    "googleMapsLink": "https://maps.google.com/maps?q=32.0853,34.7818",
+    "lastUpdate": "2025-01-15T10:30:00Z"
+  },
+  "additionalInfo": {
+    "logo": "assets/images/logo.png",
+    "favicon": "assets/images/favicon.ico",
+    "socialMedia": {
+      "facebook": "https://facebook.com/learning-catalog",
+      "twitter": "https://twitter.com/learning_catalog",
+      "linkedin": "https://linkedin.com/company/learning-catalog",
+      "youtube": "https://youtube.com/@learning-catalog"
+    },
+    "supportHours": {
+      "phone": "א'-ה' 08:00-17:00, ו' 08:00-13:00",
+      "email": "24/7 - מענה תוך 24 שעות",
+      "chat": "א'-ה' 09:00-16:00"
+    },
+    "emergencyContacts": {
+      "technical": "054-9876543",
+      "administrative": "052-1234567"
+    },
+    "languages": ["he", "ar", "en"],
+    "defaultLanguage": "he",
+    "timezone": "Asia/Jerusalem",
+    "currency": "ILS",
+    "version": "2.1.0",
+    "maintenanceMode": false,
+    "notifications": {
+      "enabled": true,
+      "types": ["system", "updates", "maintenance"]
+    }
+  },
+  "metadata": {
+    "lastUpdated": "2025-01-15T10:30:00Z",
+    "version": "1.0",
+    "schema": {
+      "title": "string - כותרת האתר",
+      "academicYear": "string - שנת הלימודים",
+      "copyright": "string - זכויות יוצרים",
+      "phone": "string - מספר טלפון ראשי",
+      "email": "string - כתובת מייל ראשית",
+      "address": "string - כתובת פיזית",
+      "workingHours": "object - שעות פעילות",
+      "wazeLink": "string - קישור לווייז",
+      "googleMapsLink": "string - קישור לגוגל מפות",
+      "lastUpdate": "datetime - תאריך עדכון אחרון"
+    }
   }
 }
