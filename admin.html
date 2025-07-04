@@ -3,118 +3,281 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>كتالوج الحلول التعليمية קטלוג פתרונות למידה</title>
+    <title>מערכת ניהול קטלוג פתרונות למידה</title>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="logo">📚 קטלוג פתרונות למידה</div>
+            <div class="logo">⚙️ מערכת ניהול קטלוג פתרונות למידה</div>
             <nav>
-                <a href="login.html">🔐 כניסה</a>
+                <span>Pisga | מנהל-על</span>
+                <a href="logout.html">יציאה</a>
             </nav>
         </div>
     </header>
 
-    <section class="search-section">
+    <section class="admin-section">
         <div class="container">
-            <h2>🔍 חיפוש פתרונות למידה</h2>
-            <select>
-                <option>כל שלבי החינוך</option>
-                <option>קדם-יסודי</option>
-                <option>יסודי</option>
-                <option>על-יסודי</option>
-                <option>תיכון</option>
-                <option>חינוך מיוחד</option>
-            </select>
-            <select>
-                <option>כל תחומי הדעת</option>
-                <option>שפה עברית</option>
-                <option>מתמטיקה</option>
-                <option>מדעים</option>
-                <option>אנגלית</option>
-                <option>היסטוריה</option>
-            </select>
-            <select>
-                <option>כל אופני הלמידה</option>
-                <option>פנים אל פנים</option>
-                <option>סינכרוני</option>
-                <option>א-סינכרוני</option>
-                <option>היברידי</option>
-            </select>
-            <button class="advanced-search">חיפוש מתקדם</button>
+            <h2>📚 ניהול פתרונות למידה</h2>
+            <div class="solution-card">
+                <h3>➕ הוספת פתרון חדש</h3>
+                <p>יצירת פתרון למידה חדש עם כל הפרטים הנדרשים</p>
+                <button>התחל עכשיו</button>
+            </div>
+            <div class="solution-card">
+                <h3>📋 הפתרונות שלי</h3>
+                <p>צפייה ועריכה של כל פתרונות הלמידה שיצרתי</p>
+                <button>צפה ברשימה</button>
+                <button>ערוך</button>
+            </div>
+            <div class="solution-card">
+                <h3>📤 ייצוא נתונים</h3>
+                <p>הדפסה ושמירת רשימת הפתרונות ל-PDF או Excel</p>
+                <button>PDF</button>
+                <button>Excel</button>
+                <button>הדפס</button>
+            </div>
+            <div class="solution-card">
+                <h3>📊 סטטיסטיקות</h3>
+                <p>12 פתרונות פעילים</p>
+                <p>284 משתתפים</p>
+                <p>3 בהכנה</p>
+            </div>
+
+            <h3>הפתרונות שלי</h3>
+            <div>
+                <button>סנן</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>מספר</th>
+                        <th>שם הפתרון</th>
+                        <th>מנחה</th>
+                        <th>שלב חינוך</th>
+                        <th>היקף שעות</th>
+                        <th>סטטוס</th>
+                        <th>פעולות</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>חשיבה מתמטית יצירתית</td>
+                        <td>פרופ' משה לוי</td>
+                        <td>יסודי</td>
+                        <td>40 שעות</td>
+                        <td>פעיל</td>
+                        <td>
+                            <a href="#">ערוך</a>
+                            <a href="#">הסתר</a>
+                            <a href="#">מחק</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>007</td>
+                        <td>פיזיקה דרך ניסויים</td>
+                        <td>ד"ר אמיר כהן</td>
+                        <td>תיכון</td>
+                        <td>45 שעות</td>
+                        <td>פעיל</td>
+                        <td>
+                            <a href="#">ערוך</a>
+                            <a href="#">הסתר</a>
+                            <a href="#">מחק</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>012</td>
+                        <td>אומנות דיגיטלית</td>
+                        <td>יעל ברק</td>
+                        <td>על-יסודי</td>
+                        <td>30 שעות</td>
+                        <td>בהכנה</td>
+                        <td>
+                            <a href="#">ערוך</a>
+                            <a href="#">פרסם</a>
+                            <a href="#">מחק</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 
-    <section class="container">
-        <div class="solution-card math">
-            <img src="https://via.placeholder.com/60?text=Math" alt="מתמטיקה">
-            <h3>פתרון למידה מס' 001: חשיבה מתמטית יצירתית</h3>
-            <p>מנחה: פרופ' משה לוי</p>
-            <p>שלב חינוך: יסודי</p>
-            <p>אופן למידה: פנים אל פנים</p>
-            <p>היקף שעות: 40 שעות</p>
-        </div>
-
-        <div class="solution-card writing">
-            <img src="https://via.placeholder.com/60?text=Writing" alt="כתיבה">
-            <h3>פתרון למידה מס' 002: כתיבה יצירתית דיגיטלית</h3>
-            <p>מנחה: ד"ר יעל רוזן</p>
-            <p>שלב חינוך: תיכון</p>
-            <p>אופן למידה: היברידי</p>
-            <p>היקף שעות: 30 שעות</p>
-        </div>
-
-        <div class="solution-card science">
-            <img src="https://via.placeholder.com/60?text=Science" alt="מדעים">
-            <h3>פתרון למידה מס' 003: מעבדה וירטואלית למדעים</h3>
-            <p>מנחה: פרופ' שרה ברק</p>
-            <p>שלב חינוך: על-יסודי</p>
-            <p>אופן למידה: סינכרוני</p>
-            <p>היקף שעות: 60 שעות</p>
-        </div>
-
-        <div class="solution-card english">
-            <img src="https://via.placeholder.com/60?text=English" alt="אנגלית">
-            <h3>פתרון למידה מס' 004: אנגלית דרך משחקים</h3>
-            <p>מנחה: ליסה ג'ונסון</p>
-            <p>שלב חינוך: קדם-יסודי</p>
-            <p>אופן למידה: א-סינכרוני</p>
-            <p>היקף שעות: 25 שעות</p>
-        </div>
-
-        <div class="solution-card history">
-            <img src="https://via.placeholder.com/60?text=History" alt="היסטוריה">
-            <h3>פתרון למידה מס' 005: היסטוריה דרך סיפורים</h3>
-            <p>מנחה: ד"ר דן כהן</p>
-            <p>שלב חינוך: תיכון</p>
-            <p>אופן למידה: פנים אל פנים</p>
-            <p>היקף שעות: 35 שעות</p>
-        </div>
-
-        <div class="solution-card emotional">
-            <img src="https://via.placeholder.com/60?text=Emotional" alt="למידה רגשית">
-            <h3>פתרון למידה מס' 006: למידה רגשית חברתית</h3>
-            <p>מנחה: ד"ר מירב שלום</p>
-            <p>שלב חינוך: חינוך מיוחד</p>
-            <p>אופן למידה: היברידי</p>
-            <p>היקף שעות: 50 שעות</p>
-        </div>
-    </section>
-
-    <section class="container">
-        <button>🖨️ הדפסה</button>
-        <button>💾 שמירה כ-PDF</button>
-    </section>
-
-    <footer>
+    <section class="admin-section">
         <div class="container">
-            <p>© 2025 קטלוג פתרונות למידה | כל הזכויות שמורות</p>
-            <p>מערכת חינוכית מתקדמת לציבור הרחב | גרסה 2.0</p>
-            <p>📞 פרטי קשר: 03-1234567 | 📧 דוא"ל: <a href="mailto:info@learning-catalog.co.il">info@learning-catalog.co.il</a></p>
-            <p>🕒 שעות פעילות: א'-ה' 08:00-17:00 | ו' 08:00-13:00</p>
+            <h2>🔧 ניהול מערכת מתקדם</h2>
+            <div class="solution-card">
+                <h3>👥 ניהול משתמשים והרשאות</h3>
+                <p>24 מדריכים | 3 מנהלים</p>
+                <button>הוסף משתמש</button>
+                <button>ערוך הרשאות</button>
+                <button>ייבא Excel</button>
+            </div>
+            <div class="solution-card">
+                <h3>🌐 מידע כללי לאתר</h3>
+                <p>✓ מעודכן | 2025 שנת לימודים</p>
+                <button>עדכן פרטים</button>
+                <button>החלף לוגו</button>
+            </div>
+            <div class="solution-card">
+                <h3>👨‍🏫 מדריכים פדגוגיים</h3>
+                <p>24 מדריכים | 18 פעילים</p>
+                <button>הוסף מדריך</button>
+                <button>ערוך רשימה</button>
+                <button>ייבא Excel</button>
+            </div>
+            <div class="solution-card">
+                <h3>🎓 מנחים</h3>
+                <p>42 מנחים | 35 פעילים</p>
+                <button>הוסף מנחה</button>
+                <button>עדכן פרטים</button>
+                <button>ייבא רשימה</button>
+            </div>
+            <div class="solution-card">
+                <h3>📹 אופני הלמידה</h3>
+                <p>4 אופנים | ✓ מוגדר</p>
+                <button>הוסף אופן</button>
+                <button>ערוך רשימה</button>
+            </div>
+            <div class="solution-card">
+                <h3>📅 ימי מפגש</h3>
+                <p>7 ימים | 5 פעילים</p>
+                <button>ערוך ימים</button>
+                <button>הגדרות</button>
+            </div>
+            <div class="solution-card">
+                <h3>👶 שלבי חינוך</h3>
+                <p>6 שלבים | ✓ מוגדר</p>
+                <button>הוסף שלב</button>
+                <button>ערוך רשימה</button>
+            </div>
+            <div class="solution-card">
+                <h3>📚 תחומי פתרונות הלמידה</h3>
+                <p>12 תחומים | 45 פתרונות</p>
+                <button>הוסף תחום</button>
+                <button>ערוך רשימה</button>
+            </div>
+            <div class="solution-card">
+                <h3>🔬 תחומי דעת</h3>
+                <p>15 תחומים | ✓ מעודכן</p>
+                <button>הוסף תחום</button>
+                <button>ערוך רשימה</button>
+            </div>
+            <div class="solution-card">
+                <h3>⏰ היקף שעות אקדמאיות</h3>
+                <p>8 אפשרויות | 120 מקסימום</p>
+                <button>הוסף היקף</button>
+                <button>ערוך רשימה</button>
+            </div>
+            <div class="solution-card">
+                <h3>📋 כל פתרונות הלמידה</h3>
+                <p>67 פתרונות | 52 פעילים</p>
+                <button>צפה בכל</button>
+                <button>ייצא נתונים</button>
+                <button>אישור מסיבי</button>
+            </div>
         </div>
-    </footer>
+    </section>
+
+    <section class="admin-section">
+        <div class="container">
+            <h2>➕ הוספת פתרון למידה חדש</h2>
+            <form>
+                <label>פתרון למידה מס'</label>
+                <input type="text" required>
+                <label>שם פתרון הלמידה *</label>
+                <input type="text" required>
+                <label>מדריך פדגוגי</label>
+                <input type="text">
+                <label>מנחה *</label>
+                <select required>
+                    <option>בחר מנחה</option>
+                    <option>פרופ' משה לוי</option>
+                    <option>ד"ר יעל רוזן</option>
+                    <option>פרופ' שרה ברק</option>
+                    <option>ליסה ג'ונסון</option>
+                </select>
+                <label>שלב חינוך *</label>
+                <select required>
+                    <option>בחר שלב חינוך</option>
+                    <option>קדם-יסודי</option>
+                    <option>יסודי</option>
+                    <option>על-יסודי</option>
+                    <option>תיכון</option>
+                    <option>חינוך מיוחד</option>
+                    <option>כללי</option>
+                </select>
+                <label>תחום דעת *</label>
+                <select required>
+                    <option>בחר תחום דעת</option>
+                    <option>שפה עברית</option>
+                    <option>שפה ערבית</option>
+                    <option>מתמטיקה</option>
+                    <option>מדעים</option>
+                    <option>אנגלית</option>
+                    <option>היסטוריה</option>
+                </select>
+                <label>היקף שעות אקדמאיות *</label>
+                <select required>
+                    <option>בחר היקף שעות</option>
+                    <option>20 שעות</option>
+                    <option>25 שעות</option>
+                    <option>30 שעות</option>
+                    <option>40 שעות</option>
+                    <option>50 שעות</option>
+                    <option>60 שעות</option>
+                    <option>80 שעות</option>
+                    <option>120 שעות</option>
+                </select>
+                <label>אופן למידה *</label>
+                <select required>
+                    <option>בחר אופן למידה</option>
+                    <option>פנים אל פנים</option>
+                    <option>סינכרוני</option>
+                    <option>א-סינכרוני</option>
+                    <option>היברידי</option>
+                </select>
+                <label>יום מפגש קבוע *</label>
+                <select required>
+                    <option>בחר יום</option>
+                    <option>ראשון</option>
+                    <option>שני</option>
+                    <option>שלישי</option>
+                    <option>רביעי</option>
+                    <option>חמישי</option>
+                    <option>שישי</option>
+                    <option>שבת</option>
+                </select>
+                <label>שעת התחלה</label>
+                <input type="time">
+                <label>שעת סיום</label>
+                <input type="time">
+                <label>תאריך התחלת המפגשים</label>
+                <input type="date">
+                <label>מטרות הלמידה *</label>
+                <textarea required></textarea>
+                <label>נוצר קשר עם המנחה</label>
+                <select>
+                    <option>לא</option>
+                    <option>בתהליך</option>
+                    <option>כן</option>
+                </select>
+                <label>סטטוס סילבוס</label>
+                <select>
+                    <option>ממתין להכנה</option>
+                    <option>בהכנה</option>
+                    <option>סילבוס מוכן</option>
+                    <option>סילבוס מאושר</option>
+                </select>
+                <button type="submit">💾 שמור פתרון</button>
+                <button type="button">❌ ביטול</button>
+                <button type="button">📝 שמור כטיוטה</button>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
