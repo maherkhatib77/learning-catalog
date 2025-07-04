@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>קטלוג פתרונות למידה الحلول التعليمية</title>
+    <title>קטלוג פתרונות למידה</title>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css" onerror="this.style.display='none'; console.log('CSS failed to load');">
+    <style>
+        /* Fallback inline styles if CSS fails to load */
+        body { font-family: Arial, sans-serif; direction: rtl; }
+        .solution-card { border: 1px solid #ccc; padding: 1rem; margin: 1rem 0; }
+    </style>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">📚 קטלוג פתרונות למידה</div>
             <nav>
-                <a href="login.html">🔐 כניסה</a>
+                <a href="./login.html">🔐 כניסה</a>
             </nav>
         </div>
     </header>
@@ -56,7 +61,6 @@
             <p>אופן למידה: פנים אל פנים</p>
             <p>היקף שעות: 40 שעות</p>
         </div>
-
         <div class="solution-card writing">
             <img src="https://via.placeholder.com/60?text=Writing" alt="כתיבה">
             <h3>פתרון למידה מס' 002: כתיבה יצירתית דיגיטלית</h3>
@@ -65,42 +69,7 @@
             <p>אופן למידה: היברידי</p>
             <p>היקף שעות: 30 שעות</p>
         </div>
-
-        <div class="solution-card science">
-            <img src="https://via.placeholder.com/60?text=Science" alt="מדעים">
-            <h3>פתרון למידה מס' 003: מעבדה וירטואלית למדעים</h3>
-            <p>מנחה: פרופ' שרה ברק</p>
-            <p>שלב חינוך: על-יסודי</p>
-            <p>אופן למידה: סינכרוני</p>
-            <p>היקף שעות: 60 שעות</p>
-        </div>
-
-        <div class="solution-card english">
-            <img src="https://via.placeholder.com/60?text=English" alt="אנגלית">
-            <h3>פתרון למידה מס' 004: אנגלית דרך משחקים</h3>
-            <p>מנחה: ליסה ג'ונסון</p>
-            <p>שלב חינוך: קדם-יסודי</p>
-            <p>אופן למידה: א-סינכרוני</p>
-            <p>היקף שעות: 25 שעות</p>
-        </div>
-
-        <div class="solution-card history">
-            <img src="https://via.placeholder.com/60?text=History" alt="היסטוריה">
-            <h3>פתרון למידה מס' 005: היסטוריה דרך סיפורים</h3>
-            <p>מנחה: ד"ר דן כהן</p>
-            <p>שלב חינוך: תיכון</p>
-            <p>אופן למידה: פנים אל פנים</p>
-            <p>היקף שעות: 35 שעות</p>
-        </div>
-
-        <div class="solution-card emotional">
-            <img src="https://via.placeholder.com/60?text=Emotional" alt="למידה רגשית">
-            <h3>פתרון למידה מס' 006: למידה רגשית חברתית</h3>
-            <p>מנחה: ד"ר מירב שלום</p>
-            <p>שלב חינוך: חינוך מיוחד</p>
-            <p>אופן למידה: היברידי</p>
-            <p>היקף שעות: 50 שעות</p>
-        </div>
+        <!-- Add other solution cards as needed -->
     </section>
 
     <section class="container">
