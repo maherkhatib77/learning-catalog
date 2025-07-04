@@ -137,29 +137,29 @@ header nav a:hover {
     font-size: 0.95rem;
 }
 
-/* Specific images for knowledge domains */
+/* Specific images for knowledge domains (updated to assets/images) */
 .solution-card.math img {
-    content: url('https://via.placeholder.com/60?text=Math');
+    content: url('/assets/images/math.jpg');
 }
 
 .solution-card.writing img {
-    content: url('https://via.placeholder.com/60?text=Writing');
+    content: url('/assets/images/writing.jpg');
 }
 
 .solution-card.science img {
-    content: url('https://via.placeholder.com/60?text=Science');
+    content: url('/assets/images/science.jpg');
 }
 
 .solution-card.english img {
-    content: url('https://via.placeholder.com/60?text=English');
+    content: url('/assets/images/english.jpg');
 }
 
 .solution-card.history img {
-    content: url('https://via.placeholder.com/60?text=History');
+    content: url('/assets/images/history.jpg');
 }
 
 .solution-card.emotional img {
-    content: url('https://via.placeholder.com/60?text=Emotional');
+    content: url('/assets/images/emotional.jpg');
 }
 
 /* Admin Dashboard */
