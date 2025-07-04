@@ -1,12 +1,8 @@
-/* Reset & Base Styles */
+/* style.css */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 body {
@@ -15,12 +11,6 @@ body {
     line-height: 1.6;
     background-color: #f7fafc;
     direction: rtl;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
 }
 
 a {
@@ -35,29 +25,19 @@ button {
     font-family: inherit;
 }
 
-input, select, textarea {
-    font-family: inherit;
-    font-size: inherit;
-}
-
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-    color: #2d3748;
-    margin-bottom: 1rem;
+.container, .admin-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-p {
-    margin-bottom: 1rem;
-}
-
-/* Layout & Containers */
-.header, .search-section, .admin-header, .admin-nav, .admin-content,
+.header, .admin-header, .search-section, .admin-nav, .admin-content,
 .form-section, .solutions-table, .module-card, .solution-card {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -66,16 +46,6 @@ p {
     margin-bottom: 30px;
     box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.footer {
-    text-align: center;
-    margin-top: 50px;
-    padding: 30px;
-    color: rgba(255, 255, 255, 0.8);
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
 }
 
 .logo, .admin-logo, .user-avatar, .card-image {
@@ -92,7 +62,6 @@ p {
     margin: 0 auto 20px;
 }
 
-/* Buttons */
 .login-btn, .advanced-search-btn, .logout-btn,
 .btn, .modal-btn, .btn-small {
     background: linear-gradient(45deg, #667eea, #764ba2);
@@ -124,13 +93,11 @@ p {
     border-radius: 12px;
 }
 
-/* Button hover effects */
 .login-btn:hover, .btn:hover, .btn-small:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
 }
 
-/* Cards */
 .solution-card, .action-card, .module-card {
     background: white;
     border-radius: 20px;
@@ -199,14 +166,12 @@ p {
     font-weight: 500;
 }
 
-/* Grid Layouts */
 .solutions-grid, .modules-grid, .form-grid, .action-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 25px;
 }
 
-/* Modal Styles */
 .modal {
     display: none;
     position: fixed;
@@ -287,7 +252,6 @@ p {
     padding: 30px;
 }
 
-/* Tables */
 .table-header {
     background: linear-gradient(45deg, #667eea, #764ba2);
     color: white;
@@ -297,28 +261,10 @@ p {
     align-items: center;
 }
 
-.table-content table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
 th, td {
     text-align: right;
     padding: 15px;
     border-bottom: 1px solid #e2e8f0;
-}
-
-th {
-    background: #f7fafc;
-    font-weight: 600;
-    color: #4a5568;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-tr:hover {
-    background: #f7fafc;
 }
 
 .status-badge {
@@ -344,68 +290,8 @@ tr:hover {
     color: #c05621;
 }
 
-/* Forms */
-.form-section {
-    background: white;
-    border-radius: 15px;
-    padding: 30px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    margin-bottom: 25px;
-}
-
-.form-title {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #2d3748;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #e2e8f0;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-bottom: 15px;
-}
-
-.form-label {
-    font-weight: 600;
-    color: #4a5568;
-    font-size: 14px;
-}
-
-.form-input, .form-select, .form-textarea {
-    padding: 12px 15px;
-    border: 2px solid #e2e8f0;
-    border-radius: 10px;
-    font-size: 14px;
-    transition: all 0.3s ease;
-    background: white;
-}
-
-.form-input:focus, .form-select:focus, .form-textarea:focus {
-    outline: none;
-    border-color: #667eea;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-}
-
-.form-textarea {
-    resize: vertical;
-    min-height: 100px;
-}
-
-.form-actions {
-    display: flex;
-    gap: 15px;
-    margin-top: 25px;
-    padding-top: 20px;
-    border-top: 1px solid #e2e8f0;
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
-    .container {
+    .container, .admin-container {
         padding: 10px;
     }
 
