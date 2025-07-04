@@ -1,4 +1,4 @@
-/* style.css */
+/* style.css - עיצוב אחיד לשני הדפים */
 * {
     margin: 0;
     padding: 0;
@@ -25,20 +25,19 @@ button {
     font-family: inherit;
 }
 
+input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
 img {
     max-width: 100%;
     height: auto;
     display: block;
 }
 
-.container, .admin-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.header, .admin-header, .search-section, .admin-nav, .admin-content,
-.form-section, .solutions-table, .module-card, .solution-card {
+/* Header styles */
+.header, .admin-header {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -46,6 +45,7 @@ img {
     margin-bottom: 30px;
     box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
+    position: relative;
 }
 
 .logo, .admin-logo, .user-avatar, .card-image {
@@ -62,7 +62,7 @@ img {
     margin: 0 auto 20px;
 }
 
-.login-btn, .advanced-search-btn, .logout-btn,
+.login-btn, .logout-btn,
 .btn, .modal-btn, .btn-small {
     background: linear-gradient(45deg, #667eea, #764ba2);
     color: white;
@@ -76,16 +76,9 @@ img {
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
 
-.btn-secondary {
-    background: linear-gradient(45deg, #718096, #4a5568);
-}
-
-.btn-danger {
-    background: linear-gradient(45deg, #e53e3e, #c53030);
-}
-
-.btn-success {
-    background: linear-gradient(45deg, #38a169, #2f855a);
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
 }
 
 .logout-btn {
@@ -93,11 +86,7 @@ img {
     border-radius: 12px;
 }
 
-.login-btn:hover, .btn:hover, .btn-small:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
-}
-
+/* Cards */
 .solution-card, .action-card, .module-card {
     background: white;
     border-radius: 20px;
@@ -172,6 +161,7 @@ img {
     gap: 25px;
 }
 
+/* Modal Styles */
 .modal {
     display: none;
     position: fixed;
@@ -250,44 +240,6 @@ img {
 
 .modal-body {
     padding: 30px;
-}
-
-.table-header {
-    background: linear-gradient(45deg, #667eea, #764ba2);
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-th, td {
-    text-align: right;
-    padding: 15px;
-    border-bottom: 1px solid #e2e8f0;
-}
-
-.status-badge {
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 11px;
-    font-weight: 600;
-    text-align: center;
-}
-
-.status-active {
-    background: #c6f6d5;
-    color: #22543d;
-}
-
-.status-hidden {
-    background: #fed7d7;
-    color: #742a2a;
-}
-
-.status-draft {
-    background: #feebc8;
-    color: #c05621;
 }
 
 @media (max-width: 768px) {
